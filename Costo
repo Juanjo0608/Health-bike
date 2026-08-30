@@ -1,0 +1,54 @@
+package motogestion.modelo;
+
+public class Costo {
+
+    private double manoDeObra;
+    private double repuestos;
+    private double otrosGastos;
+
+    // Constructor
+    public Costo(double manoDeObra, double repuestos, double otrosGastos) {
+        this.manoDeObra = manoDeObra;
+        this.repuestos = repuestos;
+        this.otrosGastos = otrosGastos;
+    }
+
+    // Calcular costo total
+    public double calcularTotal() {
+        return manoDeObra + repuestos + otrosGastos;
+    }
+
+    // Getters
+    public double getManoDeObra() {
+        return manoDeObra;
+    }
+
+    public double getRepuestos() {
+        return repuestos;
+    }
+
+    public double getOtrosGastos() {
+        return otrosGastos;
+    }
+
+    // Setters
+    public void setManoDeObra(double manoDeObra) {
+        this.manoDeObra = manoDeObra;
+    }
+
+    public void setRepuestos(double repuestos) {
+        this.repuestos = repuestos;
+    }
+
+    public void setOtrosGastos(double otrosGastos) {
+        this.otrosGastos = otrosGastos;
+    }
+
+    @Override
+    public String toString() {
+        return "Mano de obra: $" + manoDeObra +
+                "\nRepuestos: $" + repuestos +
+                "\nOtros gastos: $" + otrosGastos +
+                "\nCosto total: $" + calcularTotal();
+    }
+}
