@@ -9,9 +9,9 @@ public class Admin extends User {
 
 //constructor
 
-    public Admin(String userName, String role, String email, String telefono, LocalDate fechaRegistro, String tipoMoto,
+    public Admin(String userName, String email, String telefono, LocalDate fechaRegistro, String tipoMoto,
                  boolean isAdmin) {
-        super(userName, role, email, telefono, fechaRegistro, tipoMoto);
+        super(userName, email, telefono, fechaRegistro, tipoMoto);
         this.isAdmin = isAdmin;
     }
     //getter
