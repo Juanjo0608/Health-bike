@@ -8,7 +8,6 @@ public class User {
 //Atributos
 
 private String userName;
-private String role;
 private String email;
 private String telefono;
 private LocalDate fechaRegistro;
@@ -20,9 +19,8 @@ private String TipoMoto;
 
     }
 
-    public User(String userName, String role, String email, String telefono, LocalDate fechaRegistro, String tipoMoto) {
+    public User(String userName, String email, String telefono, LocalDate fechaRegistro, String tipoMoto) {
         this.userName = userName;
-        this.role = role;
         this.email = email;
         this.telefono = telefono;
         this.fechaRegistro = fechaRegistro;
@@ -33,10 +31,6 @@ private String TipoMoto;
 
     public String getUserName() {
         return userName;
-    }
-
-    public String getRole() {
-        return role;
     }
 
     public String getEmail() {
@@ -60,10 +54,6 @@ private String TipoMoto;
 
     public void setUserName(String userName) {
         this.userName = userName;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
     }
 
     public void setEmail(String email) {
