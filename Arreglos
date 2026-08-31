@@ -1,0 +1,86 @@
+package motogestion.modelo;
+
+import java.time.LocalDate;
+
+public class RegistroArreglo {
+
+    private int id;
+    private LocalDate fecha;
+    private String descripcion;
+    private String estado;
+    private Moto moto;
+    private Costo costo;
+
+    // Constructor
+    public RegistroArreglo(int id, LocalDate fecha, String descripcion,
+                           String estado, Moto moto, Costo costo) {
+
+        this.id = id;
+        this.fecha = fecha;
+        this.descripcion = descripcion;
+        this.estado = estado;
+        this.moto = moto;
+        this.costo = costo;
+    }
+
+    // Getters
+    public int getId() {
+        return id;
+    }
+
+    public LocalDate getFecha() {
+        return fecha;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public Moto getMoto() {
+        return moto;
+    }
+
+    public Costo getCosto() {
+        return costo;
+    }
+
+    // Setters
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setFecha(LocalDate fecha) {
+        this.fecha = fecha;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public void setMoto(Moto moto) {
+        this.moto = moto;
+    }
+
+    public void setCosto(Costo costo) {
+        this.costo = costo;
+    }
+
+    @Override
+    public String toString() {
+        return "===== REGISTRO DE ARREGLO =====" +
+                "\nID: " + id +
+                "\nFecha: " + fecha +
+                "\nDescripcion: " + descripcion +
+                "\nEstado: " + estado +
+                "\nMoto: " + moto +
+                "\n\n" + costo;
+    }
+}
